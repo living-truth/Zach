@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Alice&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cardo:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400..900&family=Great+Vibes&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Marcellus&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import "tailwindcss";
+
+@theme{
+    --color-primary:#F191CB;       
+    --font-abhaya: 'Abhaya Libre', sans-serif;
+    --font-alice: 'Alice', sans-serif;
+    --font-bodoni: 'Bodoni Moda', sans-serif;
+    --font-cardo: 'Cardo', sans-serif;
+    --font-libre-bodoni: 'Libre Bodoni', sans-serif;
+    --font-marcellus: 'Marcellus', sans-serif;
+    --font-philosopher: 'Philosopher', sans-serif;
+    --font-sansation: 'Sansation', sans-serif;
+    --font-great-vibes: 'Great Vibes', sans-serif;
+    --font-cinzel: 'Cinzel', sans-serif;
+}
