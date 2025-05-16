@@ -42,8 +42,8 @@ const Hero = () => {
       <div className="relative h-full flex flex-col justify-center items-center text-center px-4">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-light tracking-wider text-white mb-4">
           <div className="text-left ml-0 md:ml-8 lg:ml-16">
-            <span className="block text-6xl md:text-7xl -mb-6 -ml-4 font-great-vibes">Zachariah</span>
-            <span className="block font-bold text-6xl md:text-8xl ml-10 font-philosopher">A K U F F O</span>
+            <span className="block text-4l md:text-7xl -mb-4 -ml-4 font-great-vibes">Zachariah</span>
+            <span className="block font-bold text-5xl md:text-8xl ml-10 font-philosopher">A K U F F O</span>
           </div>
           <span className="block font-thin text-2xl md:text-3xl lg:text-4xl tracking-widest mt-8">
             <span className="block md:inline">I N T E R N A T I O N A L</span>

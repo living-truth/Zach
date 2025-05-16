@@ -146,8 +146,8 @@ const Contact = () => {
                 <Mail className="text-white/70 mt-1" size={20} />
                 <div>
                   <h4 className="text-sm tracking-wider mb-2">EMAIL</h4>
-                  <p className="text-white/80">bookings@elainemodel.com</p>
-                  <p className="text-white/80">agency@elainemodel.com</p>
+                  <p className="text-white/80">matey6421@gmail.com.com</p>
+                  <p className="text-white/80">matey6421@gmail.com</p>
                 </div>
               </div>
               
@@ -161,8 +161,9 @@ const Contact = () => {
               <div className="pt-6">
                 <h4 className="text-sm tracking-wider mb-4">FOLLOW</h4>
                 <div className="flex space-x-4">
-                  <a href="#" className="p-3 border border-white/20 hover:border-white/60 transition-colors">
-                    <Instagram size={20} />
+                  <a href="https://www.instagram.com/sonofiddo?igsh=MWtjc3BvZThiazI5MQ==" className="p-3 border border-white/20 hover:border-white/60 transition-colors">
+                    <Instagram size={20}
+                     />
                   </a>
                   <a href="#" className="p-3 border border-white/20 hover:border-white/60 transition-colors">
                     <Linkedin size={20} />

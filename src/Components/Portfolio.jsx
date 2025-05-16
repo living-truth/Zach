@@ -99,7 +99,7 @@ const Portfolio = () => {
     <section id="portfolio" className="py-24 px-4 bg-black font-marcellus">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-7xl font-light tracking-wider font-philosopher mb-6">P O R T F O L I O</h2>
+          <h2 className="text-4xl md:text-7xl font-light tracking-wider font-philosopher mb-6">P O R T F O L I O</h2>
           <div className="flex flex-wrap justify-center gap-4 md:gap-8">
             {categories.map(category => (
               <button

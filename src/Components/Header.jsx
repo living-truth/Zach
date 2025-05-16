@@ -43,7 +43,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-6 flex font-marcellus justify-between items-center">
         <a
           href="#"
-          className="text-white text-lg md:text-2xl lg:-ml-24  font-marcellus font-light tracking-widest"
+          className="text-white text-lg md:text-2xl  font-marcellus font-light tracking-widest"
         >
           Zachariah <span className="font-bold font-cinzel ">MODELPORTFOLIO</span>
         </a>
