@@ -8,10 +8,10 @@ const Contact = () => {
     project: '',
     message: ''
   });
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -19,11 +19,11 @@ const Contact = () => {
       [name]: value
     }));
   };
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
@@ -34,14 +34,14 @@ const Contact = () => {
         project: '',
         message: ''
       });
-      
+
       // Reset submission status after 5 seconds
       setTimeout(() => {
         setIsSubmitted(false);
       }, 5000);
     }, 1500);
   };
-  
+
   return (
     <section id="contact" className="py-24 px-4 bg-black font-marcellus">
       <div className="container mx-auto">
@@ -51,7 +51,7 @@ const Contact = () => {
             Interested in working together? Let's discuss how I can bring your creative vision to life.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div className="lg:order-2">
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -68,7 +68,7 @@ const Contact = () => {
                     className="w-full bg-zinc-900 border border-zinc-800 text-white px-4 py-3 focus:outline-none focus:border-white/40 transition-colors"
                   />
                 </div>
-                
+
                 <div>
                   <label htmlFor="email" className="block text-white/60 text-sm mb-2">Email Address</label>
                   <input
@@ -82,7 +82,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              
+
               <div>
                 <label htmlFor="project" className="block text-white/60 text-sm mb-2">Project Type</label>
                 <select
@@ -101,7 +101,7 @@ const Contact = () => {
                   <option value="Other">Other</option>
                 </select>
               </div>
-              
+
               <div>
                 <label htmlFor="message" className="block text-white/60 text-sm mb-2">Your Message</label>
                 <textarea
@@ -114,15 +114,14 @@ const Contact = () => {
                   className="w-full bg-zinc-900 border border-zinc-800 text-white px-4 py-3 focus:outline-none focus:border-white/40 transition-colors resize-none"
                 ></textarea>
               </div>
-              
+
               <button
                 type="submit"
                 disabled={isSubmitting || isSubmitted}
-                className={`flex items-center justify-center space-x-2 w-full py-4 transition-all duration-300 ${
-                  isSubmitted
+                className={`flex items-center justify-center space-x-2 w-full py-4 transition-all duration-300 ${isSubmitted
                     ? 'bg-green-600 text-white cursor-default'
                     : 'bg-white text-black hover:bg-white/90'
-                }`}
+                  }`}
               >
                 {isSubmitting ? (
                   <span>SENDING...</span>
@@ -137,33 +136,48 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          
+
           <div className="lg:order-1">
             <h3 className="text-xl font-light tracking-wider mb-8 font-marcellus">CONTACT INFORMATION</h3>
-            
+
             <div className="space-y-10 font-cardo">
               <div className="flex items-start space-x-4">
                 <Mail className="text-white/70 mt-1" size={20} />
                 <div>
                   <h4 className="text-sm tracking-wider mb-2">EMAIL</h4>
-                  <p className="text-white/80">matey6421@gmail.com.com</p>
-                  <p className="text-white/80">matey6421@gmail.com</p>
+                  <p>
+                    <a
+                      href="mailto:zachariahakuffo@gmail.com"
+                      className="text-white/80 hover:underline"
+                    >
+                      zachariahakuffo@gmail.com
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      href="mailto:zachakuffo@gmail.com"
+                      className="text-white/80 hover:underline"
+                    >
+                      zachakuffo@gmail.com
+                    </a>
+                  </p>
                 </div>
+
               </div>
-              
-              <div className="space-y-4">
+
+              {/* <div className="space-y-4">
                 <h4 className="text-sm tracking-wider mb-2">REPRESENTATION</h4>
                 <p className="text-white/80">Elite Models (New York)</p>
                 <p className="text-white/80">IMG Models (Paris)</p>
                 <p className="text-white/80">Storm Management (London)</p>
-              </div>
-              
+              </div> */}
+
               <div className="pt-6">
                 <h4 className="text-sm tracking-wider mb-4">FOLLOW</h4>
                 <div className="flex space-x-4">
                   <a href="https://www.instagram.com/sonofiddo?igsh=MWtjc3BvZThiazI5MQ==" className="p-3 border border-white/20 hover:border-white/60 transition-colors">
                     <Instagram size={20}
-                     />
+                    />
                   </a>
                   <a href="#" className="p-3 border border-white/20 hover:border-white/60 transition-colors">
                     <Linkedin size={20} />
